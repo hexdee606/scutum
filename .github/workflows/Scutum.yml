@@ -34,9 +34,6 @@ jobs:
       - name: Executing display version and about information
         run: |
           python Scutum.py -v
-      - name: Executing port scan command
-        run: |
-          python Scutum.py --scan
       - name: Executing port scan with IP address range
         run: |
           python Scutum.py --scan port -ip www.google.com -s 0 -e 1
