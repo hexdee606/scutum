@@ -39,7 +39,7 @@ jobs:
           python Scutum.py --scan port -ip www.google.com -s 0 -e 1
       - name: Executing port scan with auto mode
         run: |
-          python Scutum.py --scan port -ip www.vulnweb.com --auto
+          python Scutum.py --scan port -ip www.vulnweb.com - 0 -e 100
       - name: Executing mapping scan command
         run: |
           python Scutum.py --scan mapping --url www.vulnweb.com
